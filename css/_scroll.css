@@ -1,0 +1,130 @@
+/* -----------------------------------------------given code is only for scrollbar modification--------------------------------------------------------- */
+@media(prefers-color-scheme:dark) {
+    ::-webkit-scrollbar {
+        width: 0;
+        scrollbar-width: 0px;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 5px;
+        width: 10px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.05);
+        z-index: 9999;
+    }
+
+    #progressbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 15px;
+        border-radius: 20px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animate 5s linear infinite;
+        z-index: 99999;
+    }
+
+    @keyframes animate {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    #progressbar:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+    #progressbar:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+}
+@media(prefers-color-scheme:light) {
+    ::-webkit-scrollbar {
+        width: 0;
+        scrollbar-width: 0px;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        border-radius:15px ;
+        right: 5px;
+        width: 15px;
+        height: 100%;
+        background: rgba(107, 107, 98, 0.384);
+        z-index: 9999;
+    }
+
+    #progressbar {
+        position: fixed;
+        top: 0;
+        right: 5px;
+        width: 15px;
+        height: 100%;
+        border-radius: 20px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animate 5s linear infinite;
+        z-index: 99999;
+    }
+
+    @keyframes animate {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    #progressbar:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+    #progressbar:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+}
+
+
+/* ---------------X-------------------------X-------given code is only for scrollbar modification----------------------X------------------------X----------- */

@@ -1,0 +1,110 @@
+@media(prefers-color-scheme:light) {
+    body {
+        background-color: var(--dark-bg-color);
+    }
+
+    .container {
+        height: 90vh;
+        padding: 15px;
+        border-radius: 10px;
+        background: #e6e7ee;
+        /* box-shadow: 20px 20px 60px #dbdfe2,
+        -20px -20px 60px #fdffff; */
+        box-shadow: 17px 17px 38px #b6b9bc,
+            -17px -17px 38px #ffffff;
+    }
+
+    .table_head {
+        /* box-shadow: inset 12px 12px 32px #e6de13,
+       inset -12px -12px 32px #ffff17; */
+
+        /* box-shadow: inset  12px 12px 32px #dbdfe2,
+        inset -12px -12px 32px #fdffff; */
+        background-color: #49d000;
+        color: white;
+        box-shadow: inset 12px 12px 32px #49d000,
+            inset -12px -12px 32px #63ff00;
+
+    }
+
+    .container:hover {
+        /* box-shadow:inset  20px 20px 60px #dbdfe2,
+        inset -20px   -20px 60px #fdffff; */
+        /* box-shadow: inset 17px 17px 34px #c5c9cb,
+        inset -17px -17px 34px #f1f5f9; */
+        box-shadow: inset 5px 5px 13px #b8bbbe,
+            inset -5px -5px 13px #feffff;
+    }
+
+    input[type="search"] {
+        box-shadow: 3px 3px 9px #b8b9be,
+            -3px -3px 6px #fff;
+        border: none;
+        background-color: #e6e7ee;
+    }
+
+    input[type="search"]:hover,
+    input[type="search"]:focus,
+    input[type="search"]:active {
+        background-color: #e6e7ee;
+        border: none;
+        box-shadow: inset -4px -4px 11px #fff,
+            inset 4px 4px 11px rgba(70, 70, 70, 0.15);
+    }
+
+    select {
+        background-color: #e6e7ee;
+    }
+}
+
+
+
+
+@media(prefers-color-scheme:dark) {
+     body {
+         background-color: var(--dark-bg-color);
+     }
+
+     .container {
+         height: 90vh;
+         padding: 15px;
+         overflow-y: scroll;
+         border-radius: 10px;
+         background: #e6e7ee;
+         box-shadow:inset 17px 17px 38px #b6b9bc,
+             inset -17px -17px 38px #ffffff;
+     }
+
+     .table_head {
+         background-color: #49d000;
+         color: white;
+         box-shadow: inset 12px 12px 32px #49d000,
+             inset -12px -12px 32px #63ff00;
+
+     }
+
+     .container:hover {
+         box-shadow: inset 5px 5px 13px #b8bbbe,
+             inset -5px -5px 13px #feffff;
+     }
+
+     input[type="search"] {
+         box-shadow: 3px 3px 9px #b8b9be,
+             -3px -3px 6px #fff;
+         border: none;
+         background-color: #e6e7ee;
+     }
+
+     input[type="search"]:hover,
+     input[type="search"]:focus,
+     input[type="search"]:active {
+         background-color: #e6e7ee;
+         border: none;
+         box-shadow: inset -4px -4px 11px #fff,
+             inset 4px 4px 11px rgba(70, 70, 70, 0.15);
+     }
+
+     select {
+         background-color: #e6e7ee;
+     }
+}

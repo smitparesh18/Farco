@@ -1,0 +1,101 @@
+::selection {
+    background: #15e09c;
+    color: #23233b;
+}
+
+  .carousel-item {
+    padding: 2%;
+  }
+
+  .carousel-inner .carousel-item img {
+    width: 90vw;
+    height: 40vw;
+    border-radius: 5px;
+  }
+
+  .border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+
+  .border-gradient-green {
+    border-image-source: linear-gradient(to left, #b721ff, #21d4fd);
+  }
+
+  @media screen and (max-width: 767px) {
+    .carousel-caption h3 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .carousel-caption p {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .heading {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 367px) {
+
+    .carousel-caption h3 {
+      font-size: 15px;
+      font-weight: 200;
+    }
+
+    .carousel-caption p {
+      font-size: 13px;
+      font-weight: 100;
+    }
+
+    .heading {
+      font-size: 10px;
+    }
+  }
+
+  @media(prefers-color-scheme:dark) {
+    .carousel-inner {
+      box-shadow: 8px 8px 8px #09090f,
+        -8px -8px 8px #23233b;
+      border-radius: 5px;
+    }
+
+    .carousel-inner:hover {
+      box-shadow: inset 8px 8px 8px #09090f,
+        inset -8px -8px 8px #23233b;
+    }
+
+    .mxgraph {
+      background-color: #161625 !important;
+    }
+
+    .graph {
+      padding: 15px;
+      box-shadow: 8px 8px 8px #09090f,
+        -8px -8px 8px #23233b;
+    }
+
+    .heading {
+      padding: 10px;
+      display: block;
+      box-shadow: 8px 8px 8px #09090f,
+        -8px -8px 8px #23233b;
+      border: 3px solid rgb(#92fe9d 50%, #00c9ff 50%);
+    }
+  }
+
+  @media(prefers-color-scheme:light) {
+    .carousel-inner {
+      box-shadow: inset 5px 5px 10px #dbdfe2,
+        inset -5px -5px 10px #fdffff;
+      border-radius: 15px;
+    }
+
+    .carousel-inner:hover {
+      box-shadow: 5px 5px 10px #dbdfe2,
+        -5px -5px 10px #fdffff;
+    }
+  }

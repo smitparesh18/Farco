@@ -1,0 +1,23 @@
+/* --------------------------------light theme------------------------------------------- */
+:root {
+    --light-bg-color: #e6e7ee !important;
+    --light-shadow: 3px 3px 6px #b8b9be,
+    -3px -3px 6px #fff;
+    --light-shadow-hover: inset -4px -4px 11px #fff,inset 4px 4px 11px rgba(70, 70, 70, 0.15);
+    --light-font-color: #343f4b;
+    --light-input-shadow: inset 5px 5px 10px #dbdfe2,
+    inset -5px -5px 10px #fdffff;
+    --light-input-shadow-hover:  5px 5px 10px #dbdfe2,
+     -5px -5px 10px #fdffff;
+
+       --text-color: #e0e5eb;
+       --text-shadow: -8px -8px 15px rgba(255, 255, 255, 0.4),
+       8px 8px 12px rgba(0, 0, 0, 0.08);
+}
+/* --------------------------------dark theme------------------------------------------- */
+:root {
+    --dark-bg-color: #161625 !important;
+    --dark-shadow: 3px 3px 6px #09090f, -3px -3px 6px #23233b;
+    --dark-shadow-hover: inset 3px 3px 6px #09090f, inset -3px -3px 6px #23233b;
+    --dark-font-color: #6c757d;
+}

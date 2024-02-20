@@ -1,0 +1,217 @@
+.slider_container
+{
+    background-image: url('../img/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+    padding: 15px;
+    margin-top: -5px;
+    color:white;
+    box-shadow:5px 5px 35px rgba(0,0,0,.5);
+    border-radius: .35rem;
+    margin-bottom:20px;
+
+}
+form.slider_form
+{
+    border-radius: .35rem;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(15px);
+    font-weight: bolder;
+    padding: 15px;
+    height: 100%;
+    min-width: 100%;
+}
+::-webkit-file-upload-button {
+  color: white;
+  background-color: crimson;
+  outline: none;
+  border: none;
+}
+.slider_form .heading
+{
+    font-weight: bold;
+    font-family:monospace;
+    font-size: 2em;
+    border-bottom: 5px solid rgba(0,0,0,.2);
+}
+.slider_form input[type="text"],
+.slider_form input[type="file"],
+textarea
+{
+    background-color:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    outline: none;
+    border: none;
+    width: 100%;
+    padding:8px;
+    border-radius: 5px;
+}
+.slider_form input[type="file"]
+{
+    padding: 0px;
+}
+.slider_form ::placeholder
+{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.slider_container input[type="text"]:active,
+.slider_container input[type="text"]:hover,
+textarea
+{
+    background-color:rgba(255, 255, 255, .3);
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    caret-color: chartreuse;
+
+}
+.slider_table
+{
+    background-image: url('../img/1.jpg');
+    filter: drop-shadow(0px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+    margin:4em 0px 4em;
+}
+.slider_table .heading{
+     font-weight: bold;
+     margin: 0px;
+     background-color: transparent;
+     backdrop-filter: blur(20px);
+     color: white;
+    font-family:monospace;
+    font-size: 2em;
+    border-bottom: 5px solid rgba(0,0,0,.2)
+}
+#myTable, #myTable_wrapper,#myTable_wrapper label,#myTable_wrapper select,#myTable_info
+{
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+#myTable tr
+{
+
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
+}
+#myTable, #myTable_wrapper,#myTable_wrapper label,#myTable_wrapper select,#myTable_info
+{
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+#myTable tr
+{
+
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
+}
+
+
+
+#myTable2,
+#myTable2_wrapper,
+#myTable2_wrapper label,
+#myTable2_wrapper select,
+#myTable2_info {
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+
+#myTable2 tr {
+
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
+}
+
+#myTable2,
+#myTable2_wrapper,
+#myTable2_wrapper label,
+#myTable2_wrapper select,
+#myTable2_info {
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+
+
+
+
+
+
+#myTable3,
+#myTable3_wrapper,
+#myTable3_wrapper label,
+#myTable3_wrapper select,
+#myTable3_info {
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+
+#myTable3 tr {
+
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
+}
+
+#myTable3,
+#myTable3_wrapper,
+#myTable3_wrapper label,
+#myTable3_wrapper select,
+#myTable3_info {
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+
+
+
+
+
+
+#myTable4,
+#myTable4_wrapper,
+#myTable4_wrapper label,
+#myTable4_wrapper select,
+#myTable4_info {
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+#myTable4 th
+{
+    background-color: rgba(255, 255, 255, .6);
+}
+#myTable4 tr {
+
+    background-color: rgba(122, 122, 122, 0.164);
+    backdrop-filter: blur(20px);
+}
+
+#myTable4,
+#myTable4_wrapper,
+#myTable4_wrapper label,
+#myTable4_wrapper select,
+#myTable4_info {
+    color: white;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+}
+
+#myTable1 a.paginate_button,
+#myTable2 a.paginate_button,
+#myTable3 a.paginate_button,
+#myTable4 a.paginate_button,
+a.paginate_button
+{
+    background-color: rgba(255, 255, 255, .3);
+    color: chartreuse;;
+}

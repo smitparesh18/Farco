@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media(prefers-color-scheme:light) {
+        .icon-row {
+            background: var(--light-bg-color);
+            box-shadow: var(--light-shadow);
+        }
+
+        h6 {
+            color: #85038a;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: ubuntu mono;
+        }
+
+        .icon {
+            padding: 3%;
+            color: #f54223;
+            font-size: 25px;
+            backdrop-filter: blur(50px);
+            background: var(--light-bg-color);
+            box-shadow: var(--light-shadow);
+
+        }
+
+        .head-text {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: var(--light-bg-color);
+            box-shadow: var(--light-shadow);
+            border-bottom: 5px solid #059200;
+        }
+
+        .fa-facebook {
+            padding: 3% 4%;
+             background-color: #3b5998;
+                color:white;
+            box-shadow: 0px 0px 5px #3b5998,
+                                0px 0px 10px #3b5998,
+                                0px 0px 25px #3b5998;
+        }
+        .fa-facebook:hover {
+               transform: scale(1.1);
+        }
+
+        .fa-twitter {
+            color: white;
+            background-color: #38a1f3;
+            box-shadow: 0px 0px 5px #38A1F3,
+                                0px 0px 25px #38A1F3;
+        }
+
+        .fa-twitter:hover {
+            transform: scale(1.1);
+        }
+
+        .fa-instagram {
+            background:linear-gradient(135deg,#f403d1,#DD2A7B);
+            color: white;
+            box-shadow: 0px 0px 5px #DD2A7B,
+                                0px 0px 25px #DD2A7B;
+        }
+
+        .fa-instagram:hover {
+            transform: scale(1.1);
+        }
+        
+    .fa-linkedin{
+        box-shadow: 0px 0px 5px #0e76a8,
+                            0px 0px 25px #0e76a8;
+        background-color: #1088c1;
+        color: white;
+    }
+        
+        .fa-linkedin:hover{
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: var(--light-bg-color);
+            box-shadow: var(--light-shadow);
+            color: rgb(49, 49, 49);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .botton-border {
+            padding-bottom: 4px;
+            border-bottom: 5px solid rgb(23, 20, 220);
+        }
+    }
+
+    @media(prefers-color-scheme:dark) {
+        .icon-row {
+            background: var(--dark-bg-color) !important;
+            box-shadow: var(--dark-shadow);
+        }
+
+        .icon {
+            padding: 20px;
+            border-radius: 50%;
+            color: var(--dark-font-color);
+            font-size: 25px;
+            background: #161625;
+            box-shadow: inset 8px 8px 17px #11111c,
+                inset -8px -8px 17px #1b1b2e;
+
+        }
+
+        .head-text {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #161625;
+            box-shadow: 6px 6px 12px #13131f,
+                -6px -6px 12px #19192b;
+            border-bottom: 5px solid #1ef50b;
+        }
+
+        .fa-facebook {
+            padding: 20px 24px;
+            color: #3b5998;
+            box-shadow: 0px 0px 5px #3b5998,
+                                0px 0px 25px #3b5998;
+        }
+
+        .fa-facebook:hover {
+            box-shadow: 3px 3px 6px #324c81,
+                -3px -3px 6px #4466af;
+        }
+
+        .fa-twitter {
+            color: #38A1F3;
+            box-shadow: 0px 0px 5px #38A1F3,
+                                0px 0px 25px #38A1F3;
+        }
+
+        .fa-twitter:hover {
+            box-shadow: 3px 3px 6px #3089cf,
+                -3px -3px 6px #40b9ff;
+        }
+
+        .fa-instagram {
+            color: #DD2A7B;
+            box-shadow: 0px 0px 5px #DD2A7B,
+                                0px 0px 25px #DD2A7B;
+        }
+
+        .fa-instagram:hover {
+            box-shadow: 3px 3px 6px#DD2A7B,
+                -3px -3px 6px#DD2A7B;
+        }
+
+        .fa-linkedin {
+            color: #0e76a8;
+            box-shadow: 0px 0px 5px #0e76a8,
+                                0px 0px 25px #0e76a8;
+        }
+
+        .fa-linkedin:hover {
+            box-shadow: 3px 3px 6px #0c648f,
+                -3px -3px 6px #1088c1;
+        }
+
+        footer {
+            color: #1ef50b;
+            background-color: var(--dark-bg-color);
+            box-shadow: var(--dark-shadow);
+        }
+
+        .botton-border {
+            padding-bottom: 4px;
+            border-bottom: 5px solid #1ef50b;
+        }
+        #map-container-google-1
+        {
+            box-shadow: var(--dark-shadow);
+        }
+    }
+</style>
+
+<body>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5">
+
+        <div>
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center icon-row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 head-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+
+                        <i class="fa fa-facebook white-text mr-3 icon" aria-hidden="true"></i>
+
+                        <!-- Twitter -->
+
+                        <i class="fa fa-twitter white-text mr-3 icon" aria-hidden="true"></i>
+
+                        <!--Instagram-->
+                        <i class="fa fa-instagram white-text mr-3 icon" aria-hidden="true"></i>
+
+
+                        <!--linkedin-->
+                        <i class="fa fa-linkedin white-text icon" aria-hidden="true"></i>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold botton-border"><i class="fa fa-building-o"
+                            aria-hidden="true"></i> Farco</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><i class="fa fa-arrow-right" aria-hidden="true"></i>Here you can use rows and columns to organize
+                        your footer content. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <!--<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    
+                    <h6 class="text-uppercase font-weight-bold botton-border">Products</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+                    </p>
+
+                </div>-->
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+
+                    <h6 class="text-uppercase font-weight-bold botton-border"><i class="fa fa-link"
+                            aria-hidden="true"></i> Useful links</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Help</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold botton-border"><i class="fa fa-address-book-o"
+                            aria-hidden="true"></i> Contact</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Jamnagar, Green City 336030, INDIA</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> info@farco.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 91 9106975689</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase font-weight-bold botton-border"><i class="fa fa-location-arrow"
+                            aria-hidden="true"></i> Google Map Location</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 50px;">
+                    <div id="map-container-google-1" class="z-depth-1-half map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.6887262316855!2d70.30292981492273!3d22.061499585448153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395783899e95c1cb%3A0x8c36f132839bf4f9!2sNavagam%20Kalavad%2C%20Gujarat%20361160!5e0!3m2!1sen!2sin!4v1602676599746!5m2!1sen!2sin" width="250" height="240" frameborder="0"  loading="lazy" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <!--<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+
+                    <h6 class="text-uppercase font-weight-bold botton-border">Live Location</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    
+
+                </div>-->
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+
+        <div class="footer-copyright text-center  py-3" style="color:#1ef50b">© 2020 Copyright:
+            <a class="dark-grey-text" href="#" style="color:crimson"> farco.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

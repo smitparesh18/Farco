@@ -1,0 +1,283 @@
+@media(prefers-color-scheme:light) {
+  body {
+    color: rgb(255, 6, 81);
+    font-weight: 600;
+    background: var(--light-bg-color);
+  }
+
+  ::selection {
+    background-color: #fd2727;
+    color: #cbced1;
+  }
+
+  .container {
+    background: var(--light-bg-color);
+  }
+
+  h1 {
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+  }
+
+  span {
+    background: var(--light-bg-color);
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+  }
+
+  h1::before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    width: 20%;
+    height: 5px;
+    left: 15%;
+    top: 65%;
+    z-index: -11;
+  }
+
+  h1::after {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    width: 20%;
+    height: 5px;
+    right: 15%;
+    top: 65%;
+    z-index: -22;
+  }
+
+  form {
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 20px;
+    color: darkgreen;
+    background: var(--light-bg-color);
+    box-shadow: var(--light-shadow);
+  }
+
+  input.form-control {
+    background: #ecf0f3;
+    box-shadow: inset 5px 5px 10px #dbdfe2,
+      inset -5px -5px 10px #fdffff;
+    font-size: 18px;
+    color: #555;
+    outline: none;
+    border: none;
+    padding: 20px;
+  }
+
+
+  input:hover {
+    box-shadow: 5px 5px 10px #9c9ea0,
+      -5px -5px 10px #ffffff;
+  }
+
+  input.form-control:focus {
+    background: #ecf0f3;
+    box-shadow: 5px 5px 10px #9c9ea0,
+      -5px -5px 10px #ffffff;
+    border: none;
+  }
+
+  input.form-control::placeholder {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .bg-nue {
+    background-color: #ecf0f3;
+  }
+
+  .btn-login {
+    color: crimson;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 11px;
+    border: 3px solid crimson;
+    background: transparent;
+  }
+
+  .btn-login:hover {
+    color: #fdffff;
+    background: crimson;
+  }
+
+  a.link {
+    color: crimson;
+    display: block;
+    text-align: center;
+  }
+
+  a.link:hover {
+    color: #1ef50b;
+    text-decoration: none;
+  }
+
+  .alert-true {
+    color: rgb(0, 177, 29);
+    background: transparent;
+    border: 1px solid rgb(0, 177, 29);
+    outline: none;
+    box-shadow: var(--light-shadow);
+  }
+
+  .alert-error {
+    color: rgb(255, 0, 64);
+    background: transparent;
+    border: 1px solid rgb(255, 0, 64);
+    outline: none;
+    box-shadow: var(--light-shadow);
+  }
+}
+
+/* -------------------------------------------dark theme------------------------------------- */
+
+@media(prefers-color-scheme:dark) {
+  body {
+    color: #1ef50b;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background-color: yellow;
+    color: black;
+  }
+
+  .container {
+    background: var(--dark-bg-color);
+    padding: 20px;
+  }
+
+  h1 {
+    display: block;
+    color: greenyellow;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+  }
+
+  /* 
+      span {
+        background: linear-gradient(145deg, #1c1d21, #17181c);
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 1.9rem;
+        color: #1ef50b;
+        font-family: ubuntu mono;
+      } */
+
+  h1::before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    width: 20%;
+    height: 5px;
+    left: 15%;
+    top: 65%;
+    z-index: -11;
+  }
+
+  h1::after {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    width: 20%;
+    height: 5px;
+    right: 15%;
+    top: 65%;
+    z-index: -22;
+  }
+
+  form {
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 18px;
+    color: #1ef50b;
+    background: var(--dark-bg-color);
+    box-shadow: var(--dark-shadow);
+  }
+
+  input.form-control {
+    background: var(--dark-bg-color);
+    box-shadow: var(--dark-shadow);
+    caret-color: crimson;
+    border: none;
+    outline: none;
+  }
+
+
+  input:hover {
+    background: var(--dark-bg-color);
+    box-shadow: var(--dark-shadow-hover);
+    border: none;
+  }
+
+  input.form-control:focus {
+    background: var(--dark-bg-color);
+    box-shadow: var(--dark-shadow-hover);
+    border: none;
+    color: #ffffff;
+  }
+
+  input.form-control::placeholder {
+    color: rgb(197, 198, 201);
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .bg-nue {
+    background-color: #1a1b1f;
+    border: none;
+    outline: auto;
+  }
+
+  .btn-login {
+    color: #f0a500;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 11px;
+    border: 3px solid #f0a500;
+    box-shadow: 0px 0px 5px #f0a500,
+      0px 0px 20px #f0a500;
+    background: transparent;
+  }
+
+  .btn-login:hover {
+    background: #f0a500;
+    color: black;
+  }
+
+  a.link {
+    color: crimson;
+    display: block;
+    text-align: center;
+  }
+
+  a.link:hover {
+    color: #1ef50b;
+    text-decoration: none;
+    ;
+  }
+
+  .alert-true {
+    color: chartreuse;
+    background: transparent;
+    border: 1px solid chartreuse;
+    outline: none;
+    box-shadow: var(--dark-shadow)
+  }
+
+  .alert-error {
+    color: rgb(255, 0, 64);
+    background: transparent;
+    border: 1px solid rgb(255, 0, 64);
+    outline: none;
+    box-shadow: var(--dark-shadow);
+  }
+
+}
